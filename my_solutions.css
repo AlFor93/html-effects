@@ -53,6 +53,76 @@
   transition: filter 2s;
 }
 .ex-8-img:hover {
-  filter: grayscale(80%) brightness(19%);
+  filter: grayscale(80%) brightness(20%);
   border-radius: 40px;
+}
+.ex-9-img {
+  transition: filter 3s, border 3s, transform 3s;
+}
+.ex-9-img:hover {
+  filter: contrast(70%) brightness(80%);
+  border-radius: 40px;
+  transform: scale(1.3);
+}
+.ex-10-icon {
+  animation: GiroGiroTondo 5s linear infinite;
+}
+@keyframes GiroGiroTondo {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+.ex-11-icon:hover {
+  animation: AvantiIndietro 5s linear;
+}
+@keyframes AvantiIndietro {
+  0% { transform: rotate(0); }
+  10% { transform: rotate(27deg); }
+  20% { transform: rotate(54deg); }
+  30% { transform: rotate(81deg); }
+  40% { transform: rotate(108deg); }
+  50% { transform: rotate(135deg); }
+  60% { transform: rotate(162deg); }
+  70% { transform: rotate(189deg); }
+  80% { transform: rotate(216deg); }
+  90% { transform: rotate(270deg); }
+  100% { transform: rotate(0deg); }
+}
+.ex-12-button:hover .ex-12-top-white{
+  animation: Mooove 5s linear;
+}
+@keyframes Mooove {
+  0% { left: 10%-60px; }
+  50% { left: 50%; }
+  80% { left: 67%; }
+  100% { left: 10%-60px; }
+}
+.ex-12-button:hover .ex-12-bottom-white{
+  animation: Mooove_bottom 5s linear;
+}
+@keyframes Mooove_bottom {
+  0% { right: 10%-60px; }
+  50% { right: 50%; }
+  80% { right: 67%; }
+  100% { right: 10%-60px; }
+}
+.ex-13-button:hover .ex-13-top-white {
+  animation: btn_top 5s linear infinite;
+}
+@keyframes btn_top {
+  0% {
+   left: 10%-60px;
+   top: 0%;
+  }
+  50% { left: 67%; }
+  80% { left: 80%; }
+  100% { left:100% ; }
+}
+.ex-13-button:hover .ex-13-bottom-white {
+  animation: btn_bottom 5s linear infinite;
+}
+@keyframes btn_bottom {
+  0% { right: 10%-60px; }
+  50% { right: 50%; }
+  80% { right: 67%; }
+  100% { right: 10%-60px; }
 }
